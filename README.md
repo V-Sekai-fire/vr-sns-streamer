@@ -17,8 +17,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 Clone the repository into the directory where you want to keep the server, then build it:
 
 ```bash
-git clone https://github.com/vard88508/VRCStreamer.git
-cd VRCStreamer/server
+git clone https://github.com/V-Sekai-fire/vr-sns-streamer
+cd vr-sns-streamer/server
 chmod +x build.sh create_service.sh kill_service.sh
 ./build.sh
 ```
@@ -46,14 +46,14 @@ The complete list of settings is available in the [Environment](#environment) se
 ./create_service.sh
 ```
 
-The script creates `/etc/systemd/system/VRCStreamer.service`, enables automatic startup, and starts the server.
+The script creates `/etc/systemd/system/vr-sns-streamer.service`, enables automatic startup, and starts the server.
 
 Useful commands:
 
 ```bash
-systemctl status VRCStreamer
-systemctl restart VRCStreamer
-journalctl -u VRCStreamer -f
+systemctl status vr-sns-streamer
+systemctl restart vr-sns-streamer
+journalctl -u vr-sns-streamer -f
 ```
 
 To stop the server and remove its systemd service:
@@ -66,7 +66,7 @@ This does not delete the executable, `.env`, placeholders, or source files.
 
 ## 5. Start Streaming
 
-Open [stream.vard.cc](https://stream.vard.cc), choose `Custom Server`, and enter your server's API address:
+Open [stream.example.com](https://stream.example.com), choose `Custom Server`, and enter your server's API address:
 
 ```text
 https://example.com
