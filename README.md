@@ -1,6 +1,6 @@
-# VRCStreamer
+# VRSNSStreamer
 
-WebSocket-to-RTSP audio/video server for VRChat.
+WebSocket-to-RTSP audio/video server for VRSNSStreamer.
 
 This installation guide has only been tested on Debian 13. All commands below assume that you are using the root user.
 
@@ -23,7 +23,7 @@ chmod +x build.sh create_service.sh kill_service.sh
 ./build.sh
 ```
 
-The compiled executable is written to `VRCStreamer/server/VRCStreamer`.
+The compiled executable is written to `VRSNSStreamer/server/VRSNSStreamer`.
 
 ## 3. Configure the Server
 
